@@ -14,20 +14,27 @@ let  Shopping = activities[0];
 let transportation = ['Walking','Biking','Uber','Rental Car'];
 let Walking = activities[0];
 
-function placesToGo(toGo){
-    let toGoEat;
-    var toGo = Math.floor(Math.random() *4+1);
-    if(toGo = 0) {toGoEat = restaurants[0]}
-    else if(toGo = 1) {toGoEat = restaurants[1]}
-    else if(toGo = 2){toGoEat = restaurants[2]}
-    else if(toGo = 3){toGoEat = restaurants[3]}
-    return toGoEat;
-}
+var randomG = Math.floor(Math.random() * 4);
+console.log(randomG)
 
-console.log(placesToGo());
+var randomE = Math.floor(Math.random()*4);
+console.log(randomE) 
 
+var randomD = Math.floor(Math.random()*4);
+console.log(randomD)
+
+var randomT = Math.floor(Math.random()*4);
+console.log(randomT)
+
+function placesToGo(toGoOut){
+    if(randomG === 0){toGoOut = places[0];}
+    else if(randomG === 1){toGoOut = places[1];}
+    else if(randomG === 2){toGoOut = places[2];}
+    else if(randomG === 3){toGoOut = places[3];}
+    return toGoOut;}
 
 function placesToEat(toEat){
+    if(randomE ===0){toEat = restaurants[0];}
 
 }
 
@@ -40,4 +47,4 @@ function howIWillGetThere(getThere){
 }
 
 alert("Travel itinerary: \nDestination: \nDining: \nActivities: \nTransportation:");
-prompt("Would you like to make any changes?")
+alert(placesToGo());
