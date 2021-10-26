@@ -78,18 +78,18 @@ let userChange = prompt("Would you like to make any changes?")
 if(userChange === "yes"||userChange==="Yes"){ 
     let changePlans =prompt("What changes would you like to make?")
     if(changePlans === "1" ||changePlans==="Destination"||changePlans==="destination"){ 
-        alert("Travel itinerary:"+"\n" +"\nDestination:" +placesToGo2()+ "\nDining:" +placesToEat.call() + "\nActivities:"+thingsToDo.call()+ "\nTransportation:"+howIWillGetThere.call()+"\nEnjoy your trip!");
+        alert("Travel itinerary:"+"\n" +"\nDestination:" +placesToGo2()+ "\nDining:" +placesToEat() + "\nActivities:"+thingsToDo()+ "\nTransportation:"+howIWillGetThere()+"\nEnjoy your trip!");
         }
         else if(changePlans === "2"||changePlans==="Dining"||changePlans==="dining"){
-            alert("Travel itinerary:"+"\n" +"\nDestination:"+placesToGo.call()+ "\nDining:"+placesToEat2() + "\nActivities:"+thingsToDo.call()+ "\nTransportation:"+howIWillGetThere.call()+"\nEnjoy your trip!");
+            alert("Travel itinerary:"+"\n" +"\nDestination:"+placesToGo()+ "\nDining:"+placesToEat2() + "\nActivities:"+thingsToDo()+ "\nTransportation:"+howIWillGetThere()+"\nEnjoy your trip!");
         }
        else if(changePlans==="3"||changePlans==="Activities"||changePlans==="activities"){
-            alert("Travel itinerary:"+"\n" +"\nDestination:"+placesToGo.call()+ "\nDining:"+placesToEat.call() + "\nActivities:"+thingsToDo2()+ "\nTransportation:"+howIWillGetThere.call()+"\nEnjoy your trip!");
+            alert("Travel itinerary:"+"\n" +"\nDestination:"+placesToGo()+ "\nDining:"+placesToEat() + "\nActivities:"+thingsToDo2()+ "\nTransportation:"+howIWillGetThere()+"\nEnjoy your trip!");
         }
         else if(changePlans==="4"||changePlans==="Transportation"||changePlans==="transportation"){
-            alert("Travel itinerary:"+"\n" +"\nDestination:"+placesToGo.call()+ "\nDining:"+placesToEat.call() + "\nActivities:"+thingsToDo.call()+ "\nTransportation:"+howIWillGetThere2()+"\nEnjoy your trip!");
+            alert("Travel itinerary:"+"\n" +"\nDestination:"+placesToGo()+ "\nDining:"+placesToEat() + "\nActivities:"+thingsToDo()+ "\nTransportation:"+howIWillGetThere2()+"\nEnjoy your trip!");
         }}
 
 else if(userChange==="No"||userChange==="no"){
-alert("Travel itinerary:"+"\n" +"\nDestination:"+placesToGo.call()+ "\nDining:"+placesToEat.call() + "\nActivities:"+thingsToDo.call()+ "\nTransportation:"+howIWillGetThere.call()+"\nEnjoy your trip!");
+alert("Travel itinerary:"+"\n" +"\nDestination:"+placesToGo()+ "\nDining:"+placesToEat() + "\nActivities:"+thingsToDo()+ "\nTransportation:"+howIWillGetThere()+"\nEnjoy your trip!");
 }
